@@ -1,17 +1,63 @@
-<?php
-/**
- * Front to the WordPress application. This file doesn't do anything, but loads
- * wp-blog-header.php which does and tells WordPress to load the theme.
- *
- * @package WordPress
- */
+<?php get_header(); ?>
+	
+		<!-- START SlIDER -->	
+		<?php get_template_part('templates/mono-slider'); ?>
+		<!-- END SlIDER -->
 
-/**
- * Tells WordPress to load the WordPress theme and output it.
- *
- * @var bool
- */
-define('WP_USE_THEMES', true);
+		<!-- START ABOUT US -->	
+		<?php get_template_part('templates/mono-about'); ?>
+		<!-- END ABOUT US -->
 
-/** Loads the WordPress Environment and Template */
-require( dirname( __FILE__ ) . '/wp-blog-header.php' );
+		<!-- START WHY CHOOSE US -->
+		<?php get_template_part('templates/mono-choose'); ?>
+		<!-- END WHY CHOOSE US -->
+		
+		<!-- START COUNT DOWN DESIGN --> 
+		<?php get_template_part('templates/mono-count'); ?>
+		<!-- END COUNT DOWN DESIGN --> 
+
+		<!-- START PORTFOLIO -->
+		<?php get_template_part('templates/mono-portfolio'); ?>
+		<!-- END PORTFOLIO -->
+
+		<!-- START SPECIAL OFFER -->
+		<?php get_template_part('templates/mono-special'); ?>
+		<!-- END SPECIAL OFFER -->
+		
+		<!-- START FEATURE -->
+		<?php get_template_part('templates/mono-feature'); ?>
+		<!-- END FEATURE -->
+
+		<!-- START TEAM -->
+		<?php get_template_part('templates/mono-feature'); ?>
+		<!-- END TEAM -->	
+		
+		<!-- START HOW IT WORKS -->
+		<?php get_template_part('templates/mono-works'); ?>
+		<!-- END HOW IT WORKS -->
+
+		<!-- START PRICING -->
+		<?php get_template_part('templates/mono-pricing'); ?>
+		<!-- END PRICING -->
+   
+		<!--- START TESTIMONIAL -->		
+		<?php get_template_part('templates/mono-testimonial'); ?>
+		<!--- END TESTIMONIAL -->
+
+		<!-- START BLOG -->
+		<?php get_template_part('templates/mono-blog'); ?>
+		<!-- END BLOG -->
+		
+		<!-- START COMPANY PARTNER LOGO  -->
+		<?php get_template_part('templates/mono-partner'); ?>
+		<!-- END COMPANY PARTNER LOGO -->
+		
+		<!-- START CONTACT FORM AND CONTACT ADDRESS-->
+		<?php get_template_part('templates/mono-contact'); ?>
+		<!-- END CONTACT FORM AND CONTACT ADDRESS -->
+		
+		<!-- START MAP -->
+		<div id="map"></div>
+		<!-- END MAP -->
+		
+	<?php get_footer(); ?>
